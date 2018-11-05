@@ -27,6 +27,11 @@ public class HelloWordController {
         map.put("errorMsg","failed");
         return map;
     }
+    @RequestMapping("/getException")
+    public String getException() {
+        int i=1/0;
+        return "";
 
+    }
 
 }
